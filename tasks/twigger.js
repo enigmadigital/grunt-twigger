@@ -70,7 +70,8 @@ module.exports = function(grunt) {
     var options = this.options({
       twig: {
         cache: false
-      }
+      },
+      data: {}
     });
 
     Twig.cache(options.twig.cache);
@@ -83,8 +84,10 @@ module.exports = function(grunt) {
           return;
         }
 
-        var data = parseDataPattern(f.data),
-            template;
+        var data = _.cloneDeep(options.data);
+        _.merge(data, parseDataPattern(f.data));
+
+        var template;
 
         if (isDataFile(filepath)) {
           if (!f.template) {
