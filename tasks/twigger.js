@@ -76,6 +76,8 @@ module.exports = function(grunt) {
 
     Twig.cache(options.twig.cache);
 
+    var globalData = parseDataPattern(options.data);
+
     this.files.forEach(function(f) {
       f.src.forEach(function(filepath) {
 
@@ -84,7 +86,7 @@ module.exports = function(grunt) {
           return;
         }
 
-        var data = _.cloneDeep(options.data);
+        var data = _.cloneDeep(globalData);
         _.merge(data, parseDataPattern(f.data));
 
         var template;
