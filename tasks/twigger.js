@@ -115,8 +115,13 @@ module.exports = function(grunt) {
           options.twig.async = false;
           options.twig.rethrow = true;
 
+          options.preRender && options.preRender({
+            data: data,
+            src: filepath,
+            template: template
+          });
+
           var compiled = Twig.twig(options.twig);
-          options.preRender && options.preRender(data, options.twig);
           output = compiled.render(data);
         } catch (ex) {
           grunt.log.warn('Error compiling twig template: "' + ex + '".');
