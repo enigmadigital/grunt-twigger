@@ -1,8 +1,8 @@
 /*
  * grunt-twigger
- * https://github.com/izilla/grunt-twigger
+ * https://github.com/noisysocks/grunt-twigger
  *
- * Copyright (c) 2014 XO Digital
+ * Copyright (c) 2014 Robert Anderson
  * Licensed under the MIT license.
  */
 

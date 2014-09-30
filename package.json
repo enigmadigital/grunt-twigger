@@ -1,23 +1,23 @@
 {
   "name": "grunt-twigger",
   "description": "Easy way to turn data and/or twig templates into HTML.",
-  "version": "1.0.0",
-  "homepage": "https://github.com/izilla/grunt-twigger",
+  "version": "1.0.1",
+  "homepage": "https://github.com/noisysocks/grunt-twigger",
   "author": {
     "name": "Robert Anderson",
     "url": "http://noisysocks.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/izilla/grunt-twigger.git"
+    "url": "git://github.com/noisysocks/grunt-twigger.git"
   },
   "bugs": {
-    "url": "https://github.com/izilla/grunt-twigger/issues"
+    "url": "https://github.com/noisysocks/grunt-twigger/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/izilla/grunt-twigger/blob/master/LICENSE-MIT"
+      "url": "https://github.com/noisysocks/grunt-twigger/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
