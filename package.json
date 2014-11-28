@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "lodash": "^2.4.1",
-    "twig": "^0.7.2"
+    "twig": "xodigital/twig.js"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
